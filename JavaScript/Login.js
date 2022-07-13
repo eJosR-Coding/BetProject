@@ -5,7 +5,7 @@ function login(){
     usuario=document.getElementById("nombreuser").value;
     pass=document.getElementById("contra").value;
     //Creamos una condición 
-    if(usuario=="JosephCibertec" && pass=="admin"){
+    if(usuario=="admin" && pass=="admin"){
         window.location.href="../HTML/arriola.html";
     }else{
         alert("Usuario o nombre incorrectos, intentélo de nuevo");
