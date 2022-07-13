@@ -1,0 +1,231 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.8s linear;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(255, 165, 0, 0.8);
+}
+.header{
+    text-align: center;
+    height: 300px;
+    padding: 10px;
+    background-color: #2a3338;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    float: left;
+    margin: 15px;
+}
+.nombreus{
+    font-size: 28px;
+    margin-top: 14px;
+    color: white;
+    margin-top: 50px;
+    margin-right: 700px;
+}
+.datos{
+    font-size: 20px;
+    margin: 14px;
+    color: white;
+    margin-right: 710px;
+    text-decoration: none;
+}
+.num{
+    font-size: 20px;
+    margin: 1px;
+    color: white;
+    margin-right: 740px;
+    text-decoration: none;
+}
+.city{
+    font-size: 20px;
+    margin: 1px;
+    color: white;
+    margin-right: 760px;
+    text-decoration: none;
+}
+.header h3{
+    font-size: 20pt;
+    background: -webkit-linear-gradient(#ff8000, #7686fd);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 8pt;
+
+}
+.acerca{
+    flex: left;
+}
+
+/*Tabla desing v1*/
+@import url( "https://fonts.googleapis.com");
+
+:root{
+    --principal-color: white;
+    --segundo-color: rgb(61,68,73);
+    --resaltador-color:rgb(37, 120, 222);
+    
+    --dt-estado-ganado-color:greenyellow;
+    --dt-estado-perdido-color:red;
+
+    --dt-padding:12px;
+    --dt-padding-s:6px;
+    --dt-padding-xs:2px;
+
+    --dt-border-radious:3px;
+
+    --dt-background-color-container:#2a3338;
+    --dt-border-color:var(--segundo-color);
+    --dt-bg-color:var(--resaltador-color);
+    --dt-text-color:var(--primer--color);
+    --dt-bg-active-button:var(--resaltador-color);
+    --dt-text-color-button:var(--primer--color);
+    --dt-text-color-active-button:var(--primer--color);
+    --dt-hover-cell-color:var(--resaltador-color);
+    --dt-even-row-color:var(--segundo-color);
+    --dt-focus-color:var(--resaltador-color);
+    --dt-input-background-color:var(--segundo-color);
+    --dt-input-color:var(--primer--color);
+}
+.materialicono{
+    font-size: 16px;
+}
+.tabladatos{
+    background-color: var;
+}
+.tabladatoscontenedor{
+    background-color: var(--dt-background-color-container);
+    border-radius: var(--dt-border-radious);
+    color: white;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.tabladatoscontenedor .herramientasheader{
+    border-bottom: solid 1px var(--dt-border-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+.tabladatoscontenedor .herramientasheader .busqueda{
+    width: 30%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radious);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+}
+
+.tabladatoscontenedor .herramientasheader .herramientas{
+    width: 70%;
+}
+
+.tabladatoscontenedor .herramientasheader .herramientas ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.tabladatoscontenedor .herramientasheader .herramientas ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
+}
+
+.tabladatoscontenedor .footerherra{
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+.tabladatoscontenedor .footerherra .listaitems{
+    width: 50%;
+}
+
+.tabladatoscontenedor .footerherra .paginas{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.tabladatoscontenedor .footerherra .paginas ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+.tabladatoscontenedor .footerherra .paginas ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+}
+.tabladatoscontenedor .footerherra .paginas ul li button,.tabladatoscontenedor .footerherra .herramientas ul li button{
+    color: var(--dt-text-color-button);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--dt-border-radious);
+    background: transparent;
+    cursor: pointer;
+}
+.tabladatoscontenedor .footerherra .paginas ul li button:hover,.tabladatoscontenedor .footerherra .herramientas ul li button:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+.tabladatoscontenedor .footerherra .paginas ul li span .Ganado{
+    background-color: var(--dt-bg-color);
+    border-radius: var(--dt-border-radious);
+}
+.tabladatoscontenedor .footerherra .paginas ul li button,.tabladatoscontenedor .footerherra .paginas ul li span,
+.tabladatoscontenedor .herramientasheader .paginas ul li button{
+    padding: var(--dt-padding-s) var(--dt-padding);
+}
+.tabladatoscontenedor .tabladatos{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabladatoscontenedor .tabladatos, .tabladatoscontenedor .tabladatos th,.tabladatoscontenedor .tabladatos th{
+    padding: var(--dt-padding) var(--dt-padding);
+}
+.tabladatoscontenedor .tabladatos th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--dt-border-color);
+}
+.tabladatoscontenedor .tabladatos td{
+    border-bottom: solid 1px var(--dt-border-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr:nth-child(even){
+    background-color: var(--dt-even-row-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr:hover{
+    background-color: var(--dt-hover-cell-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Ganado::after{
+    content: "Perdido";
+    color: var(--dt-estado-perdido-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Perdido::after{
+    content: "Ganado";
+    color: var(--dt-estado-ganado-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Ganado::before, .tabladatoscontenedor .tabladatos tbody tr .Perdido::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 7px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.tabladatoscontenedor .tabladatos tbody tr .Ganado::before{
+    background-color: var(--dt-estado-perdido-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Perdido::before{
+    background-color: var(--dt-estado-ganado-color);
+}
+

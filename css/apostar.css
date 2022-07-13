@@ -1,0 +1,88 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-transform: capitalize;
+    transition: all 1.8s linear;
+}
+.inputcaja img{
+    width: 200px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: url(../Imágenes/pagarposiblebanner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.contenedor form{
+    padding: 20px;
+    width: 500px;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+.contenedor form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.contenedor form .row .col{
+    flex: 1 1 250px;
+}
+.contenedor form .row .col .title{
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+.contenedor form .row .col .inputcaja{
+    margin: 15px 0;
+}
+.contenedor form .row col .inputcaja span{
+    margin-bottom:10px;
+    display: block;
+}
+.contenedor form .row col .inputcaja input{
+    width: 100%;
+    border: 1px solid #333;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-transform: none;
+    margin: 1px;
+}
+.contenedor form .row .col .inputcaja input:focus{
+    border: 1px solid black;
+}
+.contenedor form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+.contenedor form .row .col .flex .inputcaja{
+    margin-top: 5px;
+}
+.contenedor form .row .col .inputcaja img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1);
+}
+.contenedor form .botonenviar{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: orange;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.contenedor form .botonenviar:hover{
+    background: #2ecc71;
+}
+.inputcaja input{
+    border: 1px solid #333;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1-0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../Imágenes/Logo Pintado.png" type="image/x-icon">
+    <title>ArriolaBet</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="titulo2"><span>de apostar</span></div>
+    <h3>ArriolaBet</h3>
+    <br>
+    <div class="contenedor">
+      <img src="../Imágenes/Logo Pintado.png" alt="">
+    </div>
+    <form action="">
+        <h1 class="titulo">Ingresar</h1>
+        <label>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="Usuario" id="nombreuser" placeholder="Usuario">
+        </label>
+        <label>
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" name="Contraseña" id="contra" placeholder="Contraseña">
+        </label>
+        <a href="#" onclick="recover()">¿Olvidaste tú contraseña?</a>
+        <br>
+        <input type="button" id="boton" value="Iniciar Sesión" onclick="login()">
+        <br>
+        <a href="./registar.html" class="crearC">Crear cuenta</a>
+    </form>
+    <span>Hora de apostar</span>
+</body>
+<script src="../JavaScript/Login.js"></script>
+</html>

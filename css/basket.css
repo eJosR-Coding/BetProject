@@ -1,0 +1,244 @@
+* {
+    margin: 1px;
+    border : px solid red;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+body {
+    background-color: orange;
+}
+
+/*Configurar "DIV"*/
+#cuadro {
+    width: auto;
+}
+
+/*Configurar "Main"*/
+main {
+    display: flex;
+}
+
+/*Configuracion de NOTICIAS*/
+/*Configurar "Section"*/
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    align-items: center;
+}
+
+
+/*Configuracion de APUESTAS*/
+/*Configurar "Article" Apuestas*/
+.apuestas {
+    padding: 2px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid beige;
+    width: 90%;
+    background-color: #333333;
+    margin: 10px 0;
+}
+
+.cuadroapuesta {
+    margin: 1px;
+}
+
+.cuadroapuesta h1 {
+    font-size: 30pt;
+    padding: 5px 10px;
+    color: white;
+    margin: 0px;
+    background-color: #333333;
+}
+
+.cuadroapuesta h2{
+    font-size: 20pt;
+    padding: 5px 10px;
+    color: white;
+    margin: 4px 0;
+    background-color: #333333;
+}
+
+.cuadrototal {
+    margin: 0px;
+    border-radius: 0px;
+    background-color: #474747;
+    padding: 5px 0 5px 0;
+}
+
+.cuadroinicio{
+    margin: 0px;
+    border-radius: 7px 7px 0 0;
+    background-color: #474747;
+    padding: 5px 0 5px 0;
+}
+
+.cuadrofin{
+    margin: 0px;
+    border-radius: 0 0 7px 7px;
+    background-color: #474747;
+    padding: 5px 0 5px 0;
+}
+
+.cuadrotitulo {
+    margin: 1px;
+    background-color: #474747;
+    border-radius: 4px;
+
+}
+
+.cuadrotitulo h2 {
+    font-size: 15px;
+    padding: 0px;
+    margin: 5px;
+    padding: 0px;
+    color: white;
+    font-weight: bold;
+    background-color: #474747;
+    cursor: pointer;   
+}
+
+.cuadrotitulo h2:hover {
+    color: rgb(163, 155, 155);
+}
+
+.cuadropartido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    border-radius: 4px;
+    background-color: #474747;
+}
+
+.equipo {
+    margin: 5px;
+    width: 49%;
+    border: 2px solid rgb(224, 221, 221);
+    padding: 5px 5px 5px 5px;
+    border-radius: 4px;
+    display: flex;
+    background-color: white;
+    cursor: pointer;
+}
+
+.equipo:hover{
+    background-color: rgb(163, 155, 155);
+}
+
+.apuestapago1 {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.apuestapago2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apuestapago2 p {
+    font-weight: bold;
+}
+
+/*Configurar "Footer"*/
+footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
+footer p {
+    padding: 25px 30px;
+}
+
+footer div img {
+    border-radius: 15px;
+    padding: 3px;
+    float: right;
+    width: 5%;
+    margin: 26px 10px 0px 10px;
+    transition: .3s cubic-bezier(0.41, 0, 1, 1);
+    background-color: white;
+}
+/*Unos ajustes que hice Leonardo*/
+footer div img:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px black;
+    -webkit-box-shadow: 0px 0px 15px 15px orange;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform-style: preserve-3d;
+}
+/*Una chiqui d Joseph, le agregué algunas etiquetas y en el html le agregué unos íconos más estilizados*/
+.imgregresar{
+    align-items: center;
+    display: flex;
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 0 -2px;
+    background-color: #333333;
+    padding: 5px;
+}
+
+.imgregresar h1{
+    font-size: 50px;
+    color: white;
+    padding: 10px 0px 10px 40px;
+}
+
+.regresar{
+    text-decoration: none;
+    color: white;
+    padding-inline-start: 20px;
+}
+
+.regresar img{
+    width: 80px;
+    height: 70px;
+
+    margin-left: -30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.regresar img:hover{
+    transform-style: preserve-3d;
+}
+
+.cuadroboton{
+    display: block;
+    width: max-content;
+}
+
+button {
+    border: 3px black solid;
+    border-radius: 10px;
+    background-color: #333333;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#474747;
+    color: white;
+}
+
+button  {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}

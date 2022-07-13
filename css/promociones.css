@@ -1,0 +1,173 @@
+* {
+    margin: 1px;
+    border : px solid red;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: orange;
+}
+
+#cuadro {
+    width: auto;
+}
+
+main{
+    width: auto;
+}
+
+section{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    align-items: center;
+    margin: 10px 0 ;
+}
+
+article{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #333333;
+    border: 2px solid beige;
+    border-radius: 10px;
+}
+
+.cuadrototal{
+    margin: 20px 10px;
+    border: 2px solid beige;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.cuadro{
+    margin: 10px 5px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cuadroimg{
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.cuadrotexto{
+    margin: 10px 5px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cuadro h1{
+    font-size: 17pt;
+    color: white;
+    margin: 5px auto;
+}
+
+.cuadroimg img{
+    border-radius: 5px;
+    width: 340px;
+    height: 180px;
+    border: 2px solid beige;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+    cursor: pointer
+}
+
+.cuadroimg img:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.cuadrotexto h2{
+    font-size: 11pt;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+.cuadrotexto p{
+    margin: 5px 0;
+    font-size: 10pt;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
+footer p {
+    padding: 25px 30px;
+}
+
+footer div img {
+    border-radius: 15px;
+    padding: 3px;
+    float: right;
+    width: 5%;
+    margin: 26px 10px 0px 10px;
+    transition: .3s cubic-bezier(0.41, 0, 1, 1);
+    background-color: white;
+}
+/*Unos ajustes que hice Leonardo*/
+footer div img:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px black;
+    -webkit-box-shadow: 0px 0px 15px 15px orange;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform-style: preserve-3d;
+}
+/*Una chiqui d Joseph, le agregué algunas etiquetas y en el html le agregué unos íconos más estilizados*/
+.imgregresar{
+    align-items: center;
+    display: flex;
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 0 -2px;
+    background-color: #333333;
+    padding: 5px;
+}
+
+.imgregresar h1{
+    font-size: 50px;
+    color: white;
+    padding: 10px 0px 10px 40px;
+}
+
+.regresar{
+    text-decoration: none;
+    color: white;
+    padding-inline-start: 20px;
+}
+
+.regresar img{
+    width: 80px;
+    height: 70px;
+
+    margin-left: -30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.regresar img:hover{
+    transform-style: preserve-3d;
+}
+

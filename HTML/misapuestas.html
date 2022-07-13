@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1-0, minimum-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/misapuestas.css">
+    <title>Mis apuestas</title>
+</head>
+<style>
+    *{
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.8s linear;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(255, 165, 0, 0.8);
+}
+.header{
+    text-align: center;
+    height: 300px;
+    padding: 10px;
+    background-color: #2a3338;
+}
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    float: left;
+    margin: 15px;
+}
+.nombreus{
+    font-size: 28px;
+    margin-top: 14px;
+    color: white;
+    margin-top: 50px;
+    margin-right: 700px;
+}
+.datos{
+    font-size: 20px;
+    margin: 14px;
+    color: white;
+    margin-right: 710px;
+    text-decoration: none;
+}
+.num{
+    font-size: 20px;
+    margin: 1px;
+    color: white;
+    margin-right: 740px;
+    text-decoration: none;
+}
+.city{
+    font-size: 20px;
+    margin: 1px;
+    color: white;
+    margin-right: 760px;
+    text-decoration: none;
+}
+.header h3{
+    font-size: 20pt;
+    background: -webkit-linear-gradient(#ff8000, #7686fd);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 8pt;
+
+}
+.acerca{
+    flex: left;
+}
+
+/*Tabla desing v1*/
+@import url( "https://fonts.googleapis.com");
+
+:root{
+    --principal-color: white;
+    --segundo-color: rgb(61,68,73);
+    --resaltador-color:rgb(37, 120, 222);
+    
+    --dt-estado-ganado-color:greenyellow;
+    --dt-estado-perdido-color:red;
+
+    --dt-padding:12px;
+    --dt-padding-s:6px;
+    --dt-padding-xs:2px;
+
+    --dt-border-radious:3px;
+
+    --dt-background-color-container:#2a3338;
+    --dt-border-color:var(--segundo-color);
+    --dt-bg-color:var(--resaltador-color);
+    --dt-text-color:var(--primer--color);
+    --dt-bg-active-button:var(--resaltador-color);
+    --dt-text-color-button:var(--primer--color);
+    --dt-text-color-active-button:var(--primer--color);
+    --dt-hover-cell-color:var(--resaltador-color);
+    --dt-even-row-color:var(--segundo-color);
+    --dt-focus-color:var(--resaltador-color);
+    --dt-input-background-color:var(--segundo-color);
+    --dt-input-color:var(--primer--color);
+}
+.materialicono{
+    font-size: 16px;
+}
+.tabladatos{
+    background-color: var;
+}
+.tabladatoscontenedor{
+    background-color: var(--dt-background-color-container);
+    border-radius: var(--dt-border-radious);
+    color: white;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.tabladatoscontenedor .herramientasheader{
+    border-bottom: solid 1px var(--dt-border-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+.tabladatoscontenedor .herramientasheader .busqueda{
+    width: 30%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radious);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+}
+
+.tabladatoscontenedor .herramientasheader .herramientas{
+    width: 70%;
+}
+
+.tabladatoscontenedor .herramientasheader .herramientas ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.tabladatoscontenedor .herramientasheader .herramientas ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
+}
+
+.tabladatoscontenedor .footerherra{
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+.tabladatoscontenedor .footerherra .listaitems{
+    width: 50%;
+}
+
+.tabladatoscontenedor .footerherra .paginas{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.tabladatoscontenedor .footerherra .paginas ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+.tabladatoscontenedor .footerherra .paginas ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+}
+.tabladatoscontenedor .footerherra .paginas ul li button,.tabladatoscontenedor .footerherra .herramientas ul li button{
+    color: var(--dt-text-color-button);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--dt-border-radious);
+    background: transparent;
+    cursor: pointer;
+}
+.tabladatoscontenedor .footerherra .paginas ul li button:hover,.tabladatoscontenedor .footerherra .herramientas ul li button:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+.tabladatoscontenedor .footerherra .paginas ul li span .Ganado{
+    background-color: var(--dt-bg-color);
+    border-radius: var(--dt-border-radious);
+}
+.tabladatoscontenedor .footerherra .paginas ul li button,.tabladatoscontenedor .footerherra .paginas ul li span,
+.tabladatoscontenedor .herramientasheader .paginas ul li button{
+    padding: var(--dt-padding-s) var(--dt-padding);
+}
+.tabladatoscontenedor .tabladatos{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabladatoscontenedor .tabladatos, .tabladatoscontenedor .tabladatos th,.tabladatoscontenedor .tabladatos th{
+    padding: var(--dt-padding) var(--dt-padding);
+}
+.tabladatoscontenedor .tabladatos th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--dt-border-color);
+}
+.tabladatoscontenedor .tabladatos td{
+    border-bottom: solid 1px var(--dt-border-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr:nth-child(even){
+    background-color: var(--dt-even-row-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr:hover{
+    background-color: var(--dt-hover-cell-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Ganado::after{
+    content: "Perdido";
+    color: var(--dt-estado-perdido-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Perdido::after{
+    content: "Ganado";
+    color: var(--dt-estado-ganado-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Ganado::before, .tabladatoscontenedor .tabladatos tbody tr .Perdido::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 7px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.tabladatoscontenedor .tabladatos tbody tr .Ganado::before{
+    background-color: var(--dt-estado-perdido-color);
+}
+.tabladatoscontenedor .tabladatos tbody tr .Perdido::before{
+    background-color: var(--dt-estado-ganado-color);
+}
+</style>
+<body>
+    <div class="header">
+        <h3>ArriolaBet</h3>
+        <img class="avatar" src="../Imágenes/user.png" alt="">
+        <h1 class="nombreus">Joseph Rodriguez</h1>
+        <a class="datos" href="mailto:exampleuser@gmail.com"><strong>UsuarioExample@gmail.com</strong></a>
+        <br><br>
+        <a class="num" href="https://wa.me/+51999999999">Número: <strong>999999999</strong> </a>
+        <br><br>
+        <p class="city">País: <strong>Perú</strong></p>
+        <br>
+        <p class="city">Ciudad: <strong>Lima</strong></p>
+    </div>
+    <div class="acerca">
+        <h3>Acerca de </h3>
+        <p>Estimado usuario, las transacciones que realizó son depositadas con una hora de retraso debido a nuestro sistema, gracias por elegirnos.
+            A continuación tendrá su historial de apuestas para poder revisar todo
+        </p>
+    </div>
+    
+    <div class="tabladatoscontenedor">
+        <div class="herramientasheader">
+            <div class="herramientas">
+                <u>
+                    <li><span>Historial de apuestas del usuario</span></li>
+                </u>
+            </div>
+            <div class="buqueda">
+                <input type="text" name="" class="búsqueda-input">
+
+            </div>
+        </div>
+        <table class="tabladatos">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Estado</th>
+                <th>Apuesta</th>
+                <th>Fecha y hora</th>
+                <th>Apostado</th>
+                <th>Ganancia</th>
+                <th>Nombre</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr >
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Ganado"></span></td>
+                    <td>Real Madrid vs Betis</td>
+                    <td>10:00 13/08/22</td>
+                    <td>S/. 5.00</td>
+                    <td>S/. -5.00</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Ganado"></span></td>
+                    <td>Alaves vs Cadiz</td>
+                    <td>12:00 13/08/22</td>
+                    <td>S/. 7.00</td>
+                    <td>S/. -7.00</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Perdido"></span></td>
+                    <td>Barcelona vs Villarreal</td>
+                    <td>13:30 13/08/22</td>
+                    <td>S/. 3.00</td>
+                    <td>S/. 4.50</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Ganado"></span></td>
+                    <td>Manchester City vs Aston Villa</td>
+                    <td>13:00 15/08/22</td>
+                    <td>S/. 5.00</td>
+                    <td>S/. -5.00</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Ganado"></span></td>
+                    <td>Liverpool vs Wolves</td>
+                    <td>14:30 15/08/22</td>
+                    <td>S/. 3.50</td>
+                    <td>S/. -3.50</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Ganado"></span></td>
+                    <td>Adashev, Zarrukh vs Osbourne, Ode´</td>
+                    <td>15:00 15/08/22</td>
+                    <td>S/. 2.00</td>
+                    <td>S/. -2.00</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Perdido"></span></td>
+                    <td>Botelho, Poliana vs Silva, Karine</td>
+                    <td>15:40 15/08/22</td>
+                    <td>S/. 2.50</td>
+                    <td>S/. 5.00</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Perdido"></span></td>
+                    <td>Ige, Dan vs Evloev, Movsar</td>
+                    <td>16:20 15/08/22</td>
+                    <td>S/. 5.00</td>
+                    <td>S/. 20.00</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr>
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Perdido"></span></td>
+                    <td>Lakers vs Trail Blazers</td>
+                    <td>12:00 18/08/22</td>
+                    <td>S/. 15.00</td>
+                    <td>S/. 16.35</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>              
+                <tr class="dabwdwodaowdowabdoawbud">
+                    <td class="tabla-checkbox"><input type="checkbox"></td>
+                    <td><span class="Ganado"></span></td>
+                    <td>Clippers vs Mavericks</td>
+                    <td>12:20 18/08/22</td>
+                    <td>S/. 1.50</td>
+                    <td>S/. -1.50</td>
+                    <td>Joseph Rodriguez</td>
+                </tr>                               
+            </tbody>
+        </table>
+        <div class="footerherra">
+            <div class="listaitems">
+                Mostrar
+                <select name="n-enties" id="n-enties" class="n-entries">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="15">15</option>
+                </select>
+                filas
+            </div>
+            <div class="paginas">
+                <ul>
+                    <li><span class="otracosa">1</span></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><button>...</button></li>
+                    <li><button>9</button></li>
+                    <li><button>10</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+* {
+    margin: 1px;
+    border : px solid red;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: orange;
+}
+
+#cuadro {
+    width: auto;
+}
+
+main{
+    width: auto;
+}
+
+section{
+    width: auto;
+}
+
+article{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    align-items: center;
+}
+
+.titulo{
+    width: 90%;
+    background-color: #333333;
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.titulo h1{
+    font-size: 25pt;
+    color: white;
+    margin: 15px 20px;
+}
+
+.cuadroimg{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #333333;
+    border: 2px solid beige;
+    border-radius: 10px;
+}
+
+figure{
+    display: block;
+    margin: 15px;
+}
+
+figure img{
+    border: 2px solid beige;
+    border-radius: 10px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+    cursor: pointer
+}
+
+figure img:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+
+figure figcaption{
+    font-size: 13pt;
+    color: white;
+    text-align: center;
+    border: 2px solid beige;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+figure figcaption:hover{
+    background-color: rgb(163, 155, 155);
+}
+
+/*Configurar "Footer"*/
+footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
+footer p {
+    padding: 25px 30px;
+}
+
+footer div img {
+    border-radius: 15px;
+    padding: 3px;
+    float: right;
+    width: 5%;
+    margin: 26px 10px 0px 10px;
+    transition: .3s cubic-bezier(0.41, 0, 1, 1);
+    background-color: white;
+}
+/*Unos ajustes que hice Leonardo*/
+footer div img:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px black;
+    -webkit-box-shadow: 0px 0px 15px 15px orange;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform-style: preserve-3d;
+}
+/*Una chiqui d Joseph, le agregué algunas etiquetas y en el html le agregué unos íconos más estilizados*/
+.imgregresar{
+    align-items: center;
+    display: flex;
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 0 -2px;
+    background-color: #333333;
+    padding: 5px;
+}
+
+.imgregresar h1{
+    font-size: 50px;
+    color: white;
+    padding: 10px 0px 10px 40px;
+}
+
+.regresar{
+    text-decoration: none;
+    color: white;
+    padding-inline-start: 20px;
+}
+
+.regresar img{
+    width: 80px;
+    height: 70px;
+
+    margin-left: -30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.regresar img:hover{
+    transform-style: preserve-3d;
+}
+

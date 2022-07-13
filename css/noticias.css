@@ -1,0 +1,162 @@
+*{
+    margin: 1px;
+    border : px solid red;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: orange;
+}
+/*Configurar "DIV"*/
+#cuadro{
+    width: auto;
+}
+/*Configurar "Main"*/
+main{
+    width: auto;
+    display: flex;
+}
+/*Configuracion de NOTICIAS*/
+/*Configurar "Section"*/
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    align-items: center;
+}
+
+/*Configurar "Article" Noticias*/
+.noticias1{
+    border-radius: 15px;
+    padding: 5px;
+    width: 90%;
+    margin: 10px 0  ;
+    border: 7px solid #333333;
+}
+
+.noticias2{
+    border-radius: 15px;
+    padding: 5px;
+    width: 90%;
+    margin: 10px 0  ;
+    border: 7px solid #333333;
+}
+
+.cuadroinfo{
+    margin: auto;
+    width: auto;
+    height: 99%;
+    display: block;
+    background-color: #333333;
+    border-radius: 8px;
+}
+
+.noticias1 img{
+    border-radius: 8px;
+    margin: 10px;
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+
+.noticias2 img{
+    border-radius: 8px;
+    margin: 10px;
+    float: right;
+    width: 200px;
+    height: 150px;
+}
+
+.noticias1 p{
+    font-size: 16px;
+    padding: 15px;
+    color: white;
+}
+
+.noticias2 p{
+    font-size: 16px;
+    padding: 15px;
+    color: white;
+}
+
+.ptitulo{
+    margin: 0 0 -15px 0;
+    font-size: 20pt;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/*Configurar "Footer"*/
+footer {
+    background-color: black;
+    display: flex;
+    color: white;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
+footer p {
+    padding: 25px 30px;
+}
+
+footer div img {
+    border-radius: 15px;
+    padding: 3px;
+    float: right;
+    width: 5%;
+    margin: 26px 10px 0px 10px;
+    transition: .3s cubic-bezier(0.41, 0, 1, 1);
+    background-color: white;
+}
+/*Unos ajustes que hice Leonardo*/
+footer div img:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px black;
+    -webkit-box-shadow: 0px 0px 15px 15px orange;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform-style: preserve-3d;
+}
+/*Una chiqui d Joseph, le agregué algunas etiquetas y en el html le agregué unos íconos más estilizados*/
+.imgregresar{
+    align-items: center;
+    display: flex;
+    border: 2px solid beige;
+    border-radius: 10px;
+    margin: 0 -2px;
+    background-color: #333333;
+    padding: 5px;
+}
+
+.imgregresar h1{
+    font-size: 50px;
+    color: white;
+    padding: 10px 0px 10px 40px;
+}
+
+.regresar{
+    text-decoration: none;
+    color: white;
+    padding-inline-start: 20px;
+}
+
+.regresar img{
+    width: 80px;
+    height: 70px;
+
+    margin-left: -30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.regresar img:hover{
+    transform-style: preserve-3d;
+}
+
+ 
+

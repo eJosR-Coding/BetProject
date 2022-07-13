@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1-0, minimum-scale=1.0">
+    <title>Apostar</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/apostar.css">
+    <link rel="shortcut icon" href="../Imágenes/Logo Pintado.png" type="image/x-icon">
+</head>
+<body>
+    <div class="contenedor">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="titulo">Información personal</h3>
+                    
+                    <div class="inputcaja">
+                        <span>Nombre completo: </span>
+                        <input type="text" placeholder="Juan Rodriguez Cortarreal">
+                    </div>
+                    <div class="inputcaja">
+                        <span>Email: </span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputcaja">
+                        <span>Dirección : </span>
+                        <input type="text" placeholder="Calle-Localidad-Distrito">
+                    </div>
+                    <div class="inputcaja">
+                        <span>Ciudad : </span>
+                        <input type="text" placeholder="Lima">
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="inputcaja">
+                            <span>País : </span>
+                            <input type="text" placeholder="Perú">
+                        </div>
+                        <div class="inputcaja">
+                            <span>Código postal : </span>
+                            <input type="text" placeholder="123 456">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <h3 class="titulo">Información de pago</h3>
+
+                    <div class="inputcaja">
+                        <span>Tarjetas aceptadas: </span>
+                        <img src="../Imágenes/pagar.png" alt="">
+                    </div>
+                    <div class="inputcaja">
+                        <span>Dueño de la tarjeta: </span>
+                        <input type="text" placeholder="Juan Rodriguez Cortarreal">
+                    </div>
+                    <div class="inputcaja">
+                        <span>Número de la tarjeta : </span>
+                        <input type="number" placeholder="2222-6666-8888-1111">
+                    </div>
+                    <div class="inputcaja">
+                        <span>Mes de expiración : </span>
+                        <input type="number" placeholder="01">
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="inputcaja">
+                            <span>Año de expiración : </span>
+                            <input type="number" placeholder="2000">
+                        </div>
+                        <div class="inputcaja">
+                            <span>Día de expiración : </span>
+                            <input type="number" placeholder="31">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <input type="submit" value="Pagar para poder apostar" class="botonenviar">
+        </form>
+    </div>
+</body>
+</html>
